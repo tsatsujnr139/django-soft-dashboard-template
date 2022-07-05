@@ -1,0 +1,22 @@
+{
+    "name": "soft-ui-dashboard-tailwind",
+    "version": "1.0.2",
+    "description": "",
+    "scripts": {        
+        "build": "npm run css && npm run min-css",
+        "css": "tailwindcss build -i apps/static/assets/scss/styles.css -o apps/static/assets/css/styles.css",
+        "min-css": "css-minify -d apps/static/assets/css -o apps/static/assets/css"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "postcss": "^8.4.6",
+        "postcss-cli": "^9.1.0",
+        "tailwindcss": "^3.0.19"
+    },
+    "dependencies": {
+        "cli": "^1.0.1",
+        "css-minify": "^2.0.0",
+        "highlight.js": "^11.4.0",
+        "tailwindcss-transforms": "^2.2.0"
+    }
+}
